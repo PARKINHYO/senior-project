@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_mapScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/boundrySetBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="이동 반경을 설정해주세요. (단위: m)"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+
+            <Spinner
+                android:id="@+id/bdrySpner"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:text="원하는 위치를 눌러 마커표시를 하고 설정하기 버튼을 눌러주세요."
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <fragment
+            android:id="@+id/boundrySetMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="190dp"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/setMapSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:queryHint="장소, 버스, 지하철  , 도로 검색">
+
+        </SearchView>
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/setCompleteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@android:color/holo_blue_light"
+            android:padding="10dp"
+            android:text="설정완료"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_below="@+id/layout_mapScreen"/>
+</RelativeLayout>
