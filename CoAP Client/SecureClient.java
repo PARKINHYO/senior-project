@@ -88,7 +88,7 @@ public class SecureClient {
                                 @Override
                                 public void onError(){
                                         System.err.println("Error");
-                                        client.shutdown();
+                                        // client.shutdown();
                                 }
                         });
 
