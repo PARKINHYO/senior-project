@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.kpu.ihpweb.mapper.LocationMapper">
+
+	<select id="listChildLocation"
+		resultType="org.kpu.ihpweb.domain.LocationVO">
+		select device_name, lat, lon
+		from
+		location where
+		device_name=#{device_name} order by
+		ai
+		asc
+
+	</select>
+
+<!-- 	<select id="listChildLocationJson"
+		resultType="java.util.HashMap">
+		select device_name, lat, lon
+		from
+		location where
+		device_name=#{device_name}
+		order by
+		ai
+		asc
+	</select> -->
+	
+</mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.kpu.ihpweb.mapper.GyroMapper">
+
+
+
+	<select id="read" resultType="org.kpu.ihpweb.domain.GyroVO">
+		select * from gyro
+		where
+		device_name=#{device_name}
+	</select>
+
+
+</mapper>
