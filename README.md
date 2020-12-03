@@ -5,11 +5,11 @@ Computer Engineering Senier Project<br>
 
 --------------------------------------
 
-### 프로젝트명 
+### ✔ 프로젝트명 
 #### LoRa를 활용한 어린이집 안심 지킴이 서비스 
 
 
-### 개요  
+### ✔ 개요  
 ----------------------------------------------------------
 - 증가하는 아동 실종 신고와 미처리된 현황 (Increasing child missing reports and untreated status)
 
@@ -22,7 +22,7 @@ Computer Engineering Senier Project<br>
 - 부모의 애플리케이션을 통한 정보 확인 (Identifying information through parents' applications)
 
 
-### 목적
+### ✔ 목적
 ----------------------------------------------------------
 - 아이가 들고 다닐 End device에 부착된 GPS, Gyro 센서를 통해 아이의 실시간 위치 정보와 걸음 수 정보 수집 (Get real-time location and number of steps of a child through GPS and Gyro sensors attached to the child's end device)
 
@@ -32,7 +32,7 @@ Computer Engineering Senier Project<br>
 
 - 웹을 통한 수집 정보 확인 및 기타 정보 확인 (View collection information and other information via the Web and other information)
 
-### 기능 
+### ✔ 기능 
 ----------------------------------------------------------
 - 실시간 위치 및 이동 경로 표시 (Show real-time location and travel path)
 
@@ -44,14 +44,14 @@ Computer Engineering Senier Project<br>
 
 - 기기 등록 (Device registration)
 
-### 역할
+### ✔ 역할
 ----------------------------------------------------------
 * 박인효 : CoAP 서버&클라이언트 구현, Web Server 내 MySQL DB 구축 및 연동
 * 양현용 : End Device와 Gateway 간 LoRa 통신으로 GPS 데이터 송수신 기능 구현
 * 한승훈 : Android App UI 및 기능 구현, Gyro 센서를 활용한 활동량 측정 기능 구현
 
 
-### :pencil2: 개발환경
+### ✔ 개발환경
 ----------------------------------------------------------
 #### HW 구성 요소
 - 디바이스 : Raspberry Pi 4/zero WH – End-device, Gateway, Network server
@@ -73,7 +73,7 @@ Computer Engineering Senier Project<br>
 - 개발언어 : C, Java, Python – CoAP, GPS data, Web 개발
 
 
-### :pencil2: 시연
+### ✔ 시연
 ----------------------------------------------------------
 #### Device
 ![image](https://user-images.githubusercontent.com/50897259/100999032-96bd6980-359f-11eb-96de-483413c4196e.png)
@@ -93,7 +93,7 @@ Computer Engineering Senier Project<br>
 ![image](https://user-images.githubusercontent.com/50897259/101013157-35999400-35a7-11eb-99e6-131e17edd5e3.png)
 
 
-### :pencil2: 참고
+### ✔ 참고
 ----------------------------------------------------------
 * [Statistical data](https://www.index.go.kr/potal/main/EachDtlPageDetail.do?idx_cd=1610)
 * [How to set CoAP using californium Library](https://github.com/eclipse/californium)
