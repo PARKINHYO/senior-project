@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".LoadingActivity">
+
+    <ImageView
+        android:id="@+id/loading_image"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:background="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumbarungothic"
+        android:text="나의 아이는."
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="#656565"
+        android:layout_marginTop="13.6dp"/>
+
+</LinearLayout>

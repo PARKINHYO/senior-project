@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".showGPSActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/main_location"
+            android:layout_width="match_parent"
+            android:layout_height="23.5dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:textAlignment="center"
+            android:text="우리 아이는 어디에?"
+            android:textColor="#3b3b3b"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="23.5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/back" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/locMap"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="-450dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/curLoc"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/refresh" />
+
+                <Button
+                    android:id="@+id/movingRoute"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="15dp"
+                    android:text="경로"
+                    android:background="@drawable/radius_10dp" />
+
+
+                <!-- 구획지정 -->
+                <Button
+                    android:id="@+id/baby_zone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/location"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

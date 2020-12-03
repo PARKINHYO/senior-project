@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="80dp"
+    android:layout_height="253dp"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="56dp"
+        android:background="#E5E5E5" />
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="253dp"
+        android:paddingHorizontal="3.5dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mise_image"
+            android:layout_width="41.3dp"
+            android:layout_height="41.3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="7.8dp"
+            tools:src="@drawable/tmp" />
+
+        <TextView
+            android:id="@+id/mise_status"
+            android:layout_width="73dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="6.9dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:text="상태"
+            android:textColor="#656565"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pm10"
+            android:layout_width="73dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:text="미세먼지"
+            android:textColor="#656565"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pm25"
+            android:layout_width="73dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:text="초미세먼지"
+            android:textColor="#656565"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/o3"
+            android:layout_width="73dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:text="오존"
+            android:textColor="#656565"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/no2"
+            android:layout_width="73dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:text="이산화질소"
+            android:textColor="#656565"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/co"
+            android:layout_width="73dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:text="일산화질소"
+            android:textColor="#656565"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/so3"
+            android:layout_width="73dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:text="아황산가스"
+            android:textColor="#656565"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

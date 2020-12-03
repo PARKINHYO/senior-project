@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="27dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nanumbarungothicbold"
+                android:gravity="center_vertical"
+                android:text="부모 박인효님"
+                android:textColor="#656565"
+                android:textSize="17sp" />
+
+
+            <ImageButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/close" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f7f7f7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="27dp">
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/show_info"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="41dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="17dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:fontFamily="@font/nanumbarungothic"-->
+<!--                    android:text="아이 정보 보기"-->
+<!--                    android:textColor="#656565"-->
+<!--                    android:textSize="15sp" />-->
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="9.8dp"-->
+<!--                    android:layout_height="16.4dp"-->
+<!--                    android:layout_marginRight="22dp"-->
+<!--                    android:background="@drawable/in" />-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/revise_info"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:text="아이 정보 보기"
+                    android:textColor="#656565"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:layout_width="9.8dp"
+                    android:layout_height="16.4dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@drawable/in" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/find_bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:text="다른 기기 등록하기"
+                    android:textColor="#656565"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:layout_width="9.8dp"
+                    android:layout_height="16.4dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@drawable/in" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gps_info"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:text="아이 위치 보기"
+                    android:textColor="#656565"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:layout_width="9.8dp"
+                    android:layout_height="16.4dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@drawable/in" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kcal_info"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:text="아이 활동량 보기"
+                    android:textColor="#656565"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:layout_width="9.8dp"
+                    android:layout_height="16.4dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@drawable/in" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mise_info"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:text="미세먼지 &amp; COVID-19"
+                    android:textColor="#656565"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:layout_width="9.8dp"
+                    android:layout_height="16.4dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@drawable/in" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/post_info"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="41dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="17dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:fontFamily="@font/nanumbarungothic"-->
+<!--                    android:text="아이 기록 일기 작성하기"-->
+<!--                    android:textColor="#656565"-->
+<!--                    android:textSize="15sp" />-->
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="9.8dp"-->
+<!--                    android:layout_height="16.4dp"-->
+<!--                    android:layout_marginRight="22dp"-->
+<!--                    android:background="@drawable/in" />-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/dev_info"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:text="개발자 정보"
+                    android:textColor="#656565"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:layout_width="9.8dp"
+                    android:layout_height="16.4dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@drawable/in" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

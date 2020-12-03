@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".ReviseInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/main_location"
+            android:layout_width="match_parent"
+            android:layout_height="23.5dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:textAlignment="center"
+            android:text="아이 정보 보기"
+            android:textColor="#3b3b3b"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="23.5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이 이름"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textSize="18sp"
+                    android:textColor="#3b3b3b"
+                    android:layout_marginLeft="22dp"/>
+
+                <EditText
+                    android:id="@+id/baby_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="17dp"
+                    android:focusable="false"
+                    android:paddingLeft="14dp"
+                    android:background="@drawable/radius_10dp"
+                    android:textColorHint="#000000"
+                    android:hint="한승훈"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이 나이"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textSize="18sp"
+                    android:textColor="#3b3b3b"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/baby_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="22dp"
+                    android:focusable="false"
+
+                    android:layout_marginRight="17dp"
+                    android:paddingLeft="14dp"
+                    android:background="@drawable/radius_10dp"
+                    android:textColorHint="#000000"
+                    android:hint="25"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이 신장 (cm)"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textSize="18sp"
+                    android:textColor="#3b3b3b"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/baby_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="17dp"
+                    android:focusable="false"
+
+                    android:paddingLeft="14dp"
+                    android:textColorHint="#000000"
+                    android:background="@drawable/radius_10dp"
+                    android:hint="175"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이 체중 (kg)"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textSize="18sp"
+                    android:textColor="#3b3b3b"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/baby_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="17dp"
+                    android:paddingLeft="14dp"
+                    android:background="@drawable/radius_10dp"
+                    android:focusable="false"
+
+                    android:textColorHint="#000000"
+                    android:hint="65"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이 성별"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textSize="18sp"
+                    android:textColor="#3b3b3b"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/baby_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="17dp"
+                    android:paddingLeft="14dp"
+                    android:textColorHint="#000000"
+                    android:background="@drawable/radius_10dp"
+                    android:focusable="false"
+
+                    android:hint="남"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

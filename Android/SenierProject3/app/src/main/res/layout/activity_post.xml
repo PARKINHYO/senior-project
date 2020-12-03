@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".PostActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/main_location"
+            android:layout_width="match_parent"
+            android:layout_height="23.5dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:textAlignment="center"
+            android:text="기록 일기"
+            android:textColor="#3b3b3b"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="23.5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:text="오늘 아이는 무엇을 타고 등교했나요?"
+                    android:textColor="#3b3b3b"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/category1"
+                        android:onClick="onClickCategory"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/bicycle" />
+
+                    <TextView
+                        android:layout_width="91dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:text="걷거나\n자전거"
+                        android:textColor="#3e3e3e"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/category2"
+                        android:onClick="onClickCategory"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/bus" />
+
+                    <TextView
+                        android:layout_width="91dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:text="대중교통\n이용"
+                        android:textColor="#3e3e3e"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/category3"
+                        android:onClick="onClickCategory"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/car" />
+
+                    <TextView
+                        android:layout_width="91dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:text="부모님과 함께 \n등원"
+                        android:textColor="#3e3e3e"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:text="오늘 아이는 잘 해냈나요?"
+                    android:textColor="#3b3b3b"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/category4"
+                        android:onClick="onClickCategory"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/drinkwater" />
+
+                    <TextView
+                        android:layout_width="91dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:text="물 하루 1L \n마시기"
+                        android:textColor="#3e3e3e"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/category5"
+                        android:onClick="onClickCategory"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/dustouting" />
+
+                    <TextView
+                        android:layout_width="91dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:text="손과 발을 \n잘 씻기"
+                        android:textColor="#3e3e3e"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/category6"
+                        android:onClick="onClickCategory"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/plant" />
+
+                    <TextView
+                        android:layout_width="91dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:text="아이의 꽃에 \n물 주기"
+                        android:textColor="#3e3e3e"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이에게 짧은 코멘트를 남겨주세요!"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textSize="18sp"
+                    android:textColor="#3b3b3b"
+                    android:layout_marginLeft="22dp"/>
+
+                <EditText
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="17dp"
+                    android:paddingLeft="14dp"
+                    android:background="@drawable/radius_10dp"
+                    android:hint="엄마! 오늘 저에게 하고 싶은 말은 뭐에요?"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="40dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel"
+                        android:layout_width="58dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/cancellation"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/upload"
+                        android:layout_width="58dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/registration"
+                        android:layout_marginRight="17dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

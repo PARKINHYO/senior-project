@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/main_location"
+            android:layout_width="match_parent"
+            android:layout_height="23.5dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:textAlignment="center"
+            android:text="우리 아이 기기 찾기"
+            android:textColor="#3b3b3b"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="23.5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:textSize="34dp"
+        android:background="@drawable/ic_search_black_24dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:onClick="mOnBluetoothSearch"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/nanumbarungothicbold"
+        android:text="기기 검색"
+        android:textColor="#313131"
+        android:textSize="22sp" />
+
+    <TextView
+        android:visibility="gone"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumbarungothicbold"
+        android:layout_marginTop="15dp"
+        android:text="다른 블루투스 기기에서 내 휴대폰을 찾을 수 있도록 합니다."
+        android:textColor="#313131"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/chkFindme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="mOnChkFindme" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@id/mise"
+        android:layout_marginTop="22dp"
+        android:background="#f7f7f7" />
+
+    <TextView
+        android:visibility="gone"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumbarungothicbold"
+        android:text="페어링된 기기 목록"
+        android:textColor="#313131"
+        android:textSize="16sp" />
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/listPaired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumbarungothicbold"
+        android:text="검색된 기기 목록"
+        android:textColor="#313131"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/listDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

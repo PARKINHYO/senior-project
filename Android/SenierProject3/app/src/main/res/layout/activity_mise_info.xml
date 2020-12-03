@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/main_location"
+            android:layout_width="match_parent"
+            android:layout_height="23.5dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:textAlignment="center"
+            android:text="미세먼지 &amp; COVID-19"
+            android:textColor="#3b3b3b"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="23.5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/child_mask"
+                android:layout_marginBottom="20dp"
+                android:scaleType="fitStart" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:text="코로나 바이러스란?"
+                    android:textColor="#313131"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:lineSpacingExtra="8dp"
+                    android:text="코로나 바이이러스(CoV)는 사람과 다양한 동물에 감염될 수 있는 바이러스로서 유전자 크기 27~32kb의 RNA 바이러스"
+                    android:textColor="#656565"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="22dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:text="코로나 19 의심증상 발생 시 행동수칙"
+                    android:textColor="#313131"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:lineSpacingExtra="8dp"
+                    android:text="코로나 19 감염이 의심되면, 외출을 자제하고 보건소 또는 콜센터(‘1339 또는 ‘지역번호+120’)로 먼저 상담하시기 바랍니다. 외국어 지원을 해 드립니다. 또한, 1339콜센터 안내에 따라 반드시 마스크를 착용한 후 선별진료소가 있는 의료기관을 방문하고, 방문 시 의료진에게 해외여행력을 알려주시기 바랍니다."
+                    android:textColor="#656565"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@id/mise"
+                android:layout_marginTop="22dp"
+                android:background="#f7f7f7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:text="미세먼지란?"
+                    android:textColor="#313131"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:lineSpacingExtra="8dp"
+                    android:text="미세먼지는 머리카락 지름보다 더 작은 대기 중의 물질로, 석탄, 석유 등 화석연료를 태울 때나 공장 자동차등의 배출가스에서 발생합니다. WHO 산하국제암연구소(IARC)에서는 1급 발암물질로 지정한 바 있습니다.
+한국 기준과 WHO 및 기타 해외 기준은 모두 조금씩 다릅니다. 한국 기준 등급의 조정이 있었지만 WHO보다 덜 엄격한 것이 사실입니다. 1급 발암 물질인 미세먼지의 수치를 제대로 알지 못하면 건강에 심각한 영향을 미칠 수 있기 때문에 국내 예보 외에도 WHO의 기준을 확인하고 대응하는 것을 권해드립니다."
+                    android:textColor="#656565"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/nanumbarungothicbold"
+                android:text="미세먼지를 단계별로 알아봅시다!"
+                android:textColor="#313131"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="253dp"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="86dp"
+                    android:layout_height="253dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:text="상태"
+                        android:textAlignment="center"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:text="미세먼지"
+                        android:textAlignment="center"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:text="초미세먼지"
+                        android:textAlignment="center"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:text="오존"
+                        android:textAlignment="center"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:text="이산화질소"
+                        android:textAlignment="center"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:text="일산화질소"
+                        android:textAlignment="center"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:text="아황산가스"
+                        android:textAlignment="center"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mise_recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

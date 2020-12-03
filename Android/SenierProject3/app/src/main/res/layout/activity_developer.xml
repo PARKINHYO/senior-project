@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/main_location"
+            android:layout_width="match_parent"
+            android:layout_height="23.5dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:textAlignment="center"
+            android:text="개발자 정보"
+            android:textColor="#3b3b3b"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="23.5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="27dp"
+        android:fontFamily="@font/nanumbarungothicbold"
+        android:text="한국산업기술대학교 컴퓨터공학과"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="27dp"
+        android:fontFamily="@font/nanumbarungothicbold"
+        android:text="졸업 작품"
+        android:textSize="16sp"
+        android:textColor="#656565"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="23dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="27dp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="지도교수 이보경"
+            android:textSize="16sp"
+            android:textColor="#656565"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="27dp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="bklee@kpu.ac.kr"
+            android:textSize="16sp"
+            android:textColor="#656565"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="23dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="27dp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="팀장 박인효"
+            android:textSize="16sp"
+            android:textColor="#656565"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="27dp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="ihp0001@gmail.com"
+            android:textSize="16sp"
+            android:textColor="#656565"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="23dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="27dp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="팀원 양현용"
+            android:textSize="16sp"
+            android:textColor="#656565"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="27dp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="9938ok@naver.com"
+            android:textSize="16sp"
+            android:textColor="#656565"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="23dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="27dp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="팀원 한승훈"
+            android:textSize="16sp"
+            android:textColor="#656565"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="27dp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="3246902@naver.com"
+            android:textSize="16sp"
+            android:textColor="#656565"/>
+    </LinearLayout>
+</LinearLayout>

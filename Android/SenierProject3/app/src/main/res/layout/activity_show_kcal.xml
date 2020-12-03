@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".showKcalActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/main_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="23.5dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textAlignment="center"
+                    android:text="아이 활동량 보기"
+                    android:textColor="#3b3b3b"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/back_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="23.5dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/back" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="오늘의 아이는?"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumbarungothicbold"
+                android:textSize="22sp"
+                android:textColor="#3b3b3b"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="22dp"/>
+
+            <!-- 걸음 수 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:text="걸음 수"
+                    android:gravity="center"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textSize="24sp"
+                    android:textColor="#3b3b3b"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="22dp"/>
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/circleView1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    CircleProgressView:cpv_autoTextSize="true"
+                    CircleProgressView:cpv_barColor="@color/colorPrimary"
+                    CircleProgressView:cpv_barWidth="35dp"
+                    CircleProgressView:cpv_innerContourSize="0dp"
+                    CircleProgressView:cpv_maxValue="100"
+                    CircleProgressView:cpv_outerContourSize="0dp"
+                    CircleProgressView:cpv_rimColor="@color/primary_light"
+                    CircleProgressView:cpv_rimWidth="35dp"
+                    CircleProgressView:cpv_seekMode="false"
+                    CircleProgressView:cpv_showUnit="true"
+                    CircleProgressView:cpv_spinColor="@color/colorPrimary"
+                    CircleProgressView:cpv_textColor="@color/colorPrimaryDark"
+                    CircleProgressView:cpv_textScale="1"
+                    CircleProgressView:cpv_unit="%"
+                    CircleProgressView:cpv_unitColor="@color/primary_light"
+                    CircleProgressView:cpv_unitPosition="right_top"
+                    CircleProgressView:cpv_unitScale="1"
+                    CircleProgressView:cpv_value="50" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/today_walk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="오늘 0 걸음"
+                        android:gravity="center"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:textSize="18sp"
+                        android:textColor="#3b3b3b"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="어제 4325 걸음"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:textSize="18sp"
+                        android:textColor="#3b3b3b"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="22dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 활동량 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:text="활동량 "
+                    android:gravity="center"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textSize="24sp"
+                    android:textColor="#3b3b3b"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="22dp"/>
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/circleView2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    CircleProgressView:cpv_autoTextSize="true"
+                    CircleProgressView:cpv_barColor="@color/colorPrimary"
+                    CircleProgressView:cpv_barWidth="35dp"
+                    CircleProgressView:cpv_innerContourSize="0dp"
+                    CircleProgressView:cpv_maxValue="100"
+                    CircleProgressView:cpv_outerContourSize="0dp"
+                    CircleProgressView:cpv_rimColor="@color/primary_light"
+                    CircleProgressView:cpv_rimWidth="35dp"
+                    CircleProgressView:cpv_seekMode="false"
+                    CircleProgressView:cpv_showUnit="true"
+                    CircleProgressView:cpv_spinColor="@color/colorPrimary"
+                    CircleProgressView:cpv_textColor="@color/colorPrimaryDark"
+                    CircleProgressView:cpv_textScale="1"
+                    CircleProgressView:cpv_unit="%"
+                    CircleProgressView:cpv_unitColor="@color/primary_light"
+                    CircleProgressView:cpv_unitPosition="right_top"
+                    CircleProgressView:cpv_unitScale="1"
+                    CircleProgressView:cpv_value="50" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/today_kcal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="오늘 0 kcal"
+                        android:gravity="center"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:textSize="18sp"
+                        android:textColor="#3b3b3b"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:gravity="center"
+                        android:text="어제 68 kcal"
+                        android:textColor="#3b3b3b"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nanumbarungothic"
+                android:lineSpacingExtra="3dp"
+                android:text="※ 목표 걸음 수 &amp; 활동량"
+                android:textColor="#707070"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nanumbarungothic"
+                android:lineSpacingExtra="3dp"
+                android:text="아이의 신장과 체중을 고려하여 하루에 소모해야 할 열량과 그 수치에 대비해 얼마나 걸어야 하는지에 대한 목표치를 자동으로 설정합니다. 아이에 성장을 위해 활동량이 높은 운동을 꾸준히 해주세요 :)"
+                android:textColor="#707070"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_marginTop="30dp"
+                android:background="#f7f7f7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="지난 주의 아이는 어땠을까요?"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumbarungothicbold"
+                android:textSize="22sp"
+                android:textColor="#3b3b3b"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="22dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="걸음 수 ■"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textSize="18sp"
+                    android:textColor="#009688"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="22dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="활동량 ■"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:textSize="18sp"
+                    android:textColor="#374FD8"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="22dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp">
+
+                    <im.dacer.androidcharts.LineView
+                        android:id="@+id/line_view"
+                        class="im.dacer.androidcharts.LineView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
