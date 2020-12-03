@@ -54,12 +54,24 @@ Computer Engineering Senier Project<br>
 ### :pencil2: 개발환경
 ----------------------------------------------------------
 * HW 구성 요소
+- 디바이스 : Raspberry Pi 4/zero WH – End-device, Gateway, Network server
 
-![image](https://user-images.githubusercontent.com/50897259/101000005-ab4e3180-35a0-11eb-99d1-437422ff3fe5.png)
+- 모듈 : mpu-6050, L80-39 GPS, Dragino LoRa/GPS Hat – End-device 위치 추적, 활동량 측정
+
+- 통신 : LoRa, Ethernet – End-device와 Gateway간 통신, 그 외 통신
+
+- 개발 언어 : C, Java – LoRa driver 설정, CoAP 설정
+
 
 * SW 구현 환경
+- OS : Raspbian, Windows10 – 디바이스, Web, Application 개발
 
-![image](https://user-images.githubusercontent.com/50897259/101000105-c7ea6980-35a0-11eb-9c01-1f3bacab64ee.png)
+- 개발환경(IDE) : Eclipse, Android Studio – Web, Application 개발
+
+- 개발도구 : Maven, MySQL, Gradle – CoAP, DB, Application 개발
+
+- 개발언어 : C, Java, Python – CoAP, GPS data, Web 개발
+
 
 ### :pencil2: 시연
 ----------------------------------------------------------
