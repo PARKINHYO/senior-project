@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring/root-context.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>appServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml
+			</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>appServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>MemberController</display-name>
+		<servlet-name>MemberController</servlet-name>
+		<servlet-class>org.kpu.ihpweb.controller.MemberController
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MemberController</servlet-name>
+		<url-pattern>/MemberController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>CafeMemberController</display-name>
+		<servlet-name>CafeMemberController</servlet-name>
+		<servlet-class>org.kpu.ihpweb.controller.CafeMemberController
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CafeMemberController</servlet-name>
+		<url-pattern>/CafeMemberController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>CafeBoardController</display-name>
+		<servlet-name>CafeBoardController</servlet-name>
+		<servlet-class>org.kpu.ihpweb.controller.CafeBoardController
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CafeBoardController</servlet-name>
+		<url-pattern>/CafeBoardController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>MemberControllerAdvice</display-name>
+		<servlet-name>MemberControllerAdvice</servlet-name>
+		<servlet-class>org.kpu.ihpweb.exception.MemberControllerAdvice
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MemberControllerAdvice</servlet-name>
+		<url-pattern>/MemberControllerAdvice</url-pattern>
+	</servlet-mapping>
+	<error-page>
+
+		<exception-type>java.lang.Throwable</exception-type>
+
+		<location>/exception/error.jsp</location>
+
+	</error-page>
+
+
+
+	<error-page>
+
+		<error-code>404</error-code>
+
+		<location>/exception/error.jsp</location>
+
+	</error-page>
+
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter
+		</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>
